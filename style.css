@@ -1,0 +1,28 @@
+.body{
+    background-color: black;
+    margin: 0;
+}
+
+.nav{
+    background-color: black;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    list-style-type: none;
+}
+li { font-size: 25px;
+}
+li a{
+    text-decoration: underline rgb(211, 106, 8);
+    color: rgb(255, 255, 255);
+}
+.logo img{
+    margin-left: 10vh;
+    height:83px;
+    width: 76px;
+}
+
+
