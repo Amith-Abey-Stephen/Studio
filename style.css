@@ -31,13 +31,19 @@ ul{
 }
 
 /* HOME SECTION */
+#home{
+    border-bottom: 2px solid goldenrod;
+    padding-bottom: 25px;
+}
 .bgimg{
         background-image: url('/Assests/Group\ 1000006155.png'); /* Path to your image */
         background-size:1000px;
         height: 500px;
         background-position: center;    
         background-repeat: no-repeat;
-    
+        
+
+
 }
 h3{
     font-size: 60px;
@@ -49,18 +55,6 @@ h3{
 .about {
     background-color: black;
     margin-top: 10%;
-}
-
-.abt {
-
-}
-svg {
-    color: gold;   
-    height: 80px;
-    width: 80px;
-    text-align: center; 
-
-
 }
 
 .about_t {
