@@ -29,8 +29,23 @@ ul{
     margin-left: 5%;
 }
 
+/* HOME SECTION */
+.bgimg{
+        background-image: url('/Assests/Group\ 1000006155.png'); /* Path to your image */
+        background-size:1000px;
+        height: 500px;
+        background-position: center;    
+        background-repeat: no-repeat;
+    
+}
+h3{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
 
-/* ABOUT SECTION */section {
+/* ABOUT SECTION */
+.about {
     background-color: black;
     margin-top: 10%;
 }
@@ -72,4 +87,53 @@ svg {
     margin: 0; 
     font-size: 23px;
     margin-right: 150px;
+}
+
+/* ABOUT SECTION */
+section {
+    background-color: black;
+    margin-top: 10%;
+}
+
+.abt {
+    display: flex; /* Add flexbox display */
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Arrange items in a column */
+    text-align: center; /* Center text horizontally */
+}
+
+svg {
+    color: gold;   
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px; /* Add space between SVG and text */
+}
+
+.about_t {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+}
+
+.about_content {
+    display: flex; /* Use flexbox to display left and right sections */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.left img {
+    height: 550px;
+    margin: 7rem;
+    border: gold 2px solid;
+    border-radius: 50px;
+}
+
+.right p {
+    color: white;
+    margin: 0; 
+    font-size: 23px;
+    max-width: 600px; /* Set max-width for responsive design */
 }
