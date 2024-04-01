@@ -41,9 +41,6 @@ ul{
         height: 500px;
         background-position: center;    
         background-repeat: no-repeat;
-        
-
-
 }
 h3{
     font-size: 60px;
@@ -85,9 +82,11 @@ h3{
 }
 
 /* ABOUT SECTION */
-section {
+#about{
     background-color: black;
     margin-top: 10%;
+    border-bottom: 2px solid goldenrod;
+    padding-bottom: 25px;
 }
 
 .abt {
@@ -132,3 +131,23 @@ svg {
     font-size: 23px;
     max-width: 600px; /* Set max-width for responsive design */
 }
+
+
+/* GALLERY SECTION */
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images in each row */
+    gap: 20px; /* Adjust the gap between grid items */
+}
+
+.imgs img {
+    width: 100%; /* Ensure image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */ 
+}
+
+/* Target odd images and apply a top margin of 20px */
+.imgs img:nth-child(odd) {
+    margin-top: 4%;
+}
+
