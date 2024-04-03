@@ -34,13 +34,16 @@ ul{
 #home{
     border-bottom: 2px solid goldenrod;
     padding-bottom: 25px;
+
 }
 .bgimg{
         background-image: url('/Assests/Group\ 1000006155.png'); /* Path to your image */
         background-size:1000px;
-        height: 500px;
-        background-position: center;    
+        height: 750px;
+        background-position: center top -120px;    
         background-repeat: no-repeat;
+
+
 }
 h3{
     font-size: 60px;
