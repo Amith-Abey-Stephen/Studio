@@ -81,6 +81,18 @@
             <img src="/Assests/IMG-20240331-WA0028.jpg" alt="">
         </div>
     </section>
-  
+  <script>
+    window.onload = function() {
+    // Get all images
+    const images = document.querySelectorAll('.imgs img');
+
+    // Apply random sizes to images
+    images.forEach((image) => {
+        const height = Math.floor(Math.random() * 200) + 100; // Random height between 100px and 300px
+        image.style.height = `${height}px`;
+    });
+};
+
+  </script>
 </body>
 </html>

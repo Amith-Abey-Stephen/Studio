@@ -137,20 +137,26 @@ svg {
 
 
 /* GALLERY SECTION */
+.gallery h2{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 50px;
+}
+.gallery {
+    /* position: relative; */
+    /* overflow: hidden; */
+}
 .imgs {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 images in each row */
-    gap: 20px; /* Adjust the gap between grid items */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column width as needed */
+    gap: 10px; /* Adjust gap between images */
+    grid-auto-rows: auto; /* Set auto height for grid rows */
+    grid-auto-flow: dense; /* Fill in empty grid areas */
 }
 
 .imgs img {
-    width: 100%; /* Ensure image fills its container */
+    width: 100%; /* Ensure images fill the grid items */
     height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover the container while maintaining aspect ratio */ 
-}
-
-/* Target odd images and apply a top margin of 20px */
-.imgs img:nth-child(odd) {
-    margin-top: 4%;
+    /* object-fit: cover     ; */
 }
 
