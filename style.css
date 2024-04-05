@@ -1,133 +1,3 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-body{
-        background-color: black;
-        margin: 0;
-    }
-
-  
-    /* Nav Bar */
-.navbar{
-    border-bottom: rgb(255, 174, 0) 2px solid;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: black;
-}
-ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap :25px;
-    margin-top: -3.5rem;
-}
-    li a{
-    text-decoration: underline rgb(255, 174, 0);
-    color: white;
-    font-size: 22px;
-}
-.logo{
-    height: 80px;
-    margin-left: 5%;
-}
-
-
-/* HOME SECTION */
-#home{
-    border-bottom: 2px solid goldenrod;
-    padding-bottom: 25px;
-
-}
-.bgimg{
-        background-image: url('/Assests/Group\ 1000006155.png'); /* Path to your image */
-        background-size:1000px;
-        height: 750px;
-        background-position: center top -120px;    
-        background-repeat: no-repeat;
-}
-
-h3{
-    font-size: 60px;
-    color: white;
-    text-align: center;
-}
-
-
-.left, .right {
-    flex: 1;
-}
-.left img {
-    height: 550px;
-    margin: 7rem;
-    border: gold 2px solid;
-    border-radius: 50px;
-}
-.right p {
-    color: white;
-    margin: 0; 
-    font-size: 23px;
-    margin-right: 150px;
-}
-
-/* ABOUT SECTION */
-#about{
-    background-color: black;
-    margin-top: 10%;
-    border-bottom: 2px solid goldenrod;
-    padding-bottom: 25px;
-}
-
-.abt {
-    display: flex; /* Add flexbox display */
-    align-items: center; /* Center items vertically */
-    flex-direction: column; /* Arrange items in a column */
-    text-align: center; /* Center text horizontally */
-}
-
-svg {
-    color: gold;   
-    height: 80px;
-    width: 80px;
-    margin-bottom: 20px; /* Add space between SVG and text */
-}
-
-.about_t {
-    color: rgb(255, 255, 255);
-    font-size: 60px;
-    text-align: center;
-}
-
-.about_content {
-    display: flex; /* Use flexbox to display left and right sections */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-}
-
-.left, .right {
-    flex: 1;
-}
-
-.left img {
-    height: 550px;
-    margin: 7rem;
-    border: gold 2px solid;
-    border-radius: 50px;
-}
-
-.right p {
-    color: white;
-    margin: 0; 
-    font-size: 23px;
-    max-width: 600px; /* Set max-width for responsive design */
-}
-
-
-/* GALLERY SECTION */
-.gallery h2{
-    color: antiquewhite;
-    text-align: center;
-    font-size: 50px;
-}
 /* Reset default margin and padding */
 * {
     margin: 0;
@@ -135,24 +5,143 @@ svg {
     box-sizing: border-box;
 }
 
-/* Basic styles for the gallery container */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
-    gap: 20px; /* Adjust the gap between items */
+/* Body styles */
+body {
+    background-color: black;
+    margin: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    border-bottom: rgb(255, 174, 0) 2px solid;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+.logo {
+    height: 80px;
+    margin-left: 5%;
+}
+
+/* Home section styles */
+#home {
+    border-bottom: 2px solid goldenrod;
+    padding-bottom: 25px;
+}
+
+.bgimg {
+    background-image: url('/Assests/Group\ 1000006155.png');
+    background-size: cover;
+    height: 750px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+/* About section styles */
+#about {
+    background-color: black;
+    margin-top: 10%;
+    border-bottom: 2px solid goldenrod;
+    padding-bottom: 25px;
+}
+
+.abt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 20px;
 }
+
+.about_t {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.about_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.right {
+    flex: 2;
+    max-width: 600px;
+}
+
+.left img {
+    width: 100%;
+    border: gold 2px solid;
+    border-radius: 20px;
+}
+
+.right p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Gallery section styles */
+.gallery {
+    padding: 20px;
+}
+
+.gallery-head {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery h2 {
+    color: antiquewhite;
+    font-size: 40px;
+}
+
 .gallery-item {
-    position: ;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 .gallery-item img {
     max-width: 100%;
     height: auto;
     display: block;
+    border-radius: 10px;
 }
 
-/* Styles for image captions */
 .caption {
     position: absolute;
     bottom: 0;
@@ -165,3 +154,56 @@ svg {
     font-size: 14px;
 }
 
+/* Media Query for Tablets */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .logo {
+        margin: 10px 0;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    li a {
+        font-size: 18px;
+    }
+
+    #home h3 {
+        font-size: 40px;
+    }
+
+    .about_t {
+        font-size: 40px;
+    }
+
+    .about_content {
+        flex-direction: column;
+    }
+
+    .left img {
+        margin: 0;
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 480px) {
+    #home h3 {
+        font-size: 30px;
+    }
+
+    .about_t {
+        font-size: 30px;
+    }
+
+    .right p {
+        font-size: 16px;
+    }
+}
