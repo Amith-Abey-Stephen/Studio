@@ -4,6 +4,7 @@ body{
         margin: 0;
     }
 
+  
     /* Nav Bar */
 .navbar{
     border-bottom: rgb(255, 174, 0) 2px solid;
@@ -30,6 +31,7 @@ ul{
     margin-left: 5%;
 }
 
+
 /* HOME SECTION */
 #home{
     border-bottom: 2px solid goldenrod;
@@ -42,32 +44,15 @@ ul{
         height: 750px;
         background-position: center top -120px;    
         background-repeat: no-repeat;
-
-
 }
+
 h3{
     font-size: 60px;
     color: white;
     text-align: center;
 }
 
-/* ABOUT SECTION */
-.about {
-    background-color: black;
-    margin-top: 10%;
-}
 
-.about_t {
-    color: rgb(255, 255, 255);
-    font-size: 60px;
-    text-align: center;
-}
-
-.about_content {
-    display: flex; /* Use flexbox to display left and right sections */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-}
 .left, .right {
     flex: 1;
 }
@@ -109,6 +94,7 @@ svg {
 .about_t {
     color: rgb(255, 255, 255);
     font-size: 60px;
+    text-align: center;
 }
 
 .about_content {
@@ -156,10 +142,8 @@ svg {
     gap: 20px; /* Adjust the gap between items */
     padding: 20px;
 }
-
-/* Styles for individual gallery items */
 .gallery-item {
-    position: relative;
+    position: ;
 }
 
 .gallery-item img {
