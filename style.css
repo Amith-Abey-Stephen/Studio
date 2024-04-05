@@ -142,14 +142,9 @@ svg {
     gap: 20px; /* Adjust the gap between items */
     padding: 20px;
 }
-.gallery-item {
-    position: ;
-}
-
 .gallery-item img {
     max-width: 100%;
-    height: auto;
-    display: block;
+    display: inline;
 }
 
 /* Styles for image captions */
