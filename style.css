@@ -125,43 +125,54 @@ svg {
     font-size: 23px;
     max-width: 600px; /* Set max-width for responsive design */
 }
-
-.service-head{
+.service-head h2{
+    margin-top: 1em;
     color: #A49F83;
-    text-align: center;
     font-family: "Irish Grover";
     font-size: 64.002px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -2.56px;
+    text-align: center;
 }
+.card-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
 .card {
-    width: 300px; /* Adjust width as needed */
-    margin: 20px; /* Adjust margin as needed */
-    border: 1px solid #ccc; /* Border color */
-    border-radius: 5px; /* Border radius */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
-  }
-  
-  .card img {
-    width: 100%;
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.card img {
+    max-width: 100%;
     height: auto;
-    border-top-left-radius: 5px; /* Rounded corners for top left */
-    border-top-right-radius: 5px; /* Rounded corners for top right */
-  }
-  
-  .container {
-    padding: 20px; /* Adjust padding as needed */
-  }
-  
-  h4 {
-    margin-top: 0; /* Remove default margin */
-  }
-  
-  p {
-    margin-bottom: 0; /* Remove default margin */
-  }
+    border-radius: 10,10,0,0 ;
+}
+
+.container {
+    margin-top: 15px;
+}
+
+.container h4 {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+.container p{
+    color: #ccc;
+    font-size: 15px;
+    margin-bottom: 2em;
+}
+
 /* GALLERY SECTION */
 .gallery h2{
     color: antiquewhite;
@@ -183,16 +194,9 @@ svg {
 }
 
 .gallery-item img {
-<<<<<<< HEAD
-    /* max-width: 100%; Adjust image width */
-    height: 50%; /* Maintain aspect ratio */
-    display: block;
-    width: auto; /* Ensure images don't have default inline layout */
-=======
     max-width: 100%;
     display: inline;
     border-radius: 25px;
->>>>>>> 56e439b38fa3acff5500f38be0265bfe63389b62
 }
 
 /* CONTACT SECTION */
