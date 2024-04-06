@@ -5,11 +5,11 @@
     margin: 0;
     padding: 0;
 }
+
 body{
         background-color: black;
         margin: 0;
     }
-  
     /* Nav Bar */
 .navbar{
     border-bottom: rgb(255, 174, 0) 2px solid;
@@ -42,7 +42,6 @@ ul{
 #home{
     border-bottom: 2px solid goldenrod;
     padding-bottom: 25px;
-
 }
 .bgimg{
         background-image: url('/Assests/Group\ 1000006155.png'); /* Path to your image */
@@ -60,9 +59,7 @@ p{
     font-size: 20px;
     font-style: normal;
     font-weight: 25%;
-    line-height: normal;
-   
-    
+    line-height: normal;   
 }
 
 h3{
@@ -73,21 +70,6 @@ h3{
 }
 
 
-.left, .right {
-    flex: 1;
-}
-.left img {
-    height: 550px;
-    margin: 7rem;
-    border: gold 2px solid;
-    border-radius: 50px;
-}
-.right p {
-    color: white;
-    margin: 0; 
-    font-size: 23px;
-    margin-right: 150px;
-}
 
 /* ABOUT SECTION */
 #about{
@@ -151,7 +133,6 @@ svg {
     text-align: center;
     font-size: 50px;
 }
-/* Reset default margin and padding */
 
 .gallery-section {
     display: flex;
@@ -170,13 +151,6 @@ svg {
     max-width: 100%;
     display: inline;
     border-radius: 25px;
-}
-
-.gallery-item img:hover{
-    transform: smooth;
-    scale:1.5;
-    border-radius: 100px;
-    border: solid goldenrod 2px;
 }
 
 /* CONTACT SECTION */
