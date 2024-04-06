@@ -167,7 +167,6 @@ svg {
 }
 
 .gallery-item img {
-<<<<<<< HEAD
     max-width: 100%;
     display: inline;
     border-radius: 25px;
@@ -178,32 +177,79 @@ svg {
     scale:1.5;
     border-radius: 100px;
     border: solid goldenrod 2px;
-=======
-    max-width: 100%; /* Adjust image width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure images don't have default inline layout */
 }
 
-@media (max-width: 576px) {
-    .gallery-item {
-        width: 100%; /* On smaller screens, make each item take full width */
-    }
+/* CONTACT SECTION */
+#contact {
+    background-color: #000000;
+    padding: 50px 0;
 }
 
+#contact h2{
+    color: #FFF;
+}
+.cntct {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start of the cross axis */
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.cntct .left,
+.cntct .right {
+    flex: 1;
+}
 
+.cntct .left {
+    padding-right: 20px; /* Adjust spacing between left and right content */
+}
 
+.cntct .right {
+    padding-left: 20px; /* Adjust spacing between left and right content */
+}
 
+.cntct .social {
+    margin-top: 20px;
+}
 
-/* Styles for image captions */
-.caption {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
+.cntct .social a {
+    display: flex;
+    margin-right: 10px;
+    color: #fafafa;
+    font-size: 20px;
     padding: 10px;
-    text-align: center;
-    font-size: 14px;
->>>>>>> 2c75f519a8189e0a9742b105632b4a15f7aa15b5
+}
+
+/* Style form elements */
+.cntct form {
+    margin-top: 20px;
+}
+
+.cntct form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f3e9e9;
+}
+
+.cntct form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #414344;
+}
+
+.cntct form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cntct form input[type="submit"]:hover {
+    background-color: #0056b3;
 }
