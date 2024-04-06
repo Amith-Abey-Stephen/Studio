@@ -125,6 +125,9 @@ svg {
     font-size: 23px;
     max-width: 600px; /* Set max-width for responsive design */
 }
+.service{
+    border-bottom: 2px solid goldenrod;
+}
 .service-head h2{
     margin-top: 1em;
     color: #A49F83;
@@ -137,18 +140,22 @@ svg {
     text-align: center;
 }
 .card-area {
+    margin-left: 10em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 40px;
+    margin-bottom: 7em;
 }
 
 .card {
     margin-top: 5em;
+    height: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid hsl(0, 0%, 80%);
     border-radius: 10px;
 }
 
@@ -169,12 +176,15 @@ svg {
 }
 .container p{
     color: #ccc;
-    font-size: 15px;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    font-size: 12px;
+    padding-bottom: 5em;
 }
 
 /* GALLERY SECTION */
 .gallery h2{
+    margin-top: 2em;
+    margin-bottom: 2em;
     color: antiquewhite;
     text-align: center;
     font-size: 50px;
