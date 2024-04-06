@@ -101,6 +101,7 @@ svg {
     display: flex; /* Use flexbox to display left and right sections */
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
+    text-align: justify;
 }
 
 .left, .right {
@@ -129,23 +130,36 @@ svg {
     font-size: 50px;
 }
 /* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-/* Basic styles for the gallery container */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
-    gap: 20px; /* Adjust the gap between items */
-    padding: 20px;
+.gallery-item {
+    width: calc(50% - 5px); /* Each item takes up half of the container's width with some space in between */
+    margin-bottom: 10px; /* Adjust spacing between rows */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+    text-align: center; /* Center the content horizontally */
 }
+
 .gallery-item img {
-    max-width: 100%;
-    display: inline;
+    max-width: 100%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images don't have default inline layout */
 }
+
+@media (max-width: 576px) {
+    .gallery-item {
+        width: 100%; /* On smaller screens, make each item take full width */
+    }
+}
+
+
+
+
+
 
 /* Styles for image captions */
 .caption {
@@ -159,4 +173,3 @@ svg {
     text-align: center;
     font-size: 14px;
 }
-
