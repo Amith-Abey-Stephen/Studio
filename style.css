@@ -103,10 +103,15 @@ svg {
 
 .about_content {
     display: flex; /* Use flexbox to display left and right sections */
+    text-align: justify;
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
-    text-align: justify;
+ 
     font-family: "Poppins",sans-serif;
+}
+.about_content .right p{
+    text-align: justify;
+    margin-right: 2em;
 }
 .left, .right {
     flex: 1;
