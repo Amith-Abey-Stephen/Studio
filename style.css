@@ -55,6 +55,7 @@ p{
     text-align: center;
     margin-left: 8em;
     margin-right: 8em;
+    margin-top: 1em;
     font-family: "Inria Serif";
     font-size: 20px;
     font-style: normal;
@@ -63,7 +64,8 @@ p{
 }
 
 h3{
-    font-size: 55px;
+    margin-top: 1em;
+    font-size: 65px;
     color: white;
     text-align: center;
     font-family: "Poppins",sans-serif;
