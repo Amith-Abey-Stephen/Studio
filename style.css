@@ -183,16 +183,11 @@ svg {
 }
 
 .gallery-item img {
-<<<<<<< HEAD
-    /* max-width: 100%; Adjust image width */
-    height: 50%; /* Maintain aspect ratio */
-    display: block;
-    width: auto; /* Ensure images don't have default inline layout */
-=======
-    max-width: 100%;
+    /* max-width: 100%; */
     display: inline;
     border-radius: 25px;
->>>>>>> 56e439b38fa3acff5500f38be0265bfe63389b62
+    height: 50%;
+    width: 50%;
 }
 
 /* CONTACT SECTION */
@@ -218,11 +213,11 @@ svg {
 }
 
 .cntct .left {
-    padding-right: 20px; /* Adjust spacing between left and right content */
+    /* padding-right: 20px; Adjust spacing between left and right content */
 }
 
 .cntct .right {
-    padding-left: 20px; /* Adjust spacing between left and right content */
+    /* padding-left: 20px; Adjust spacing between left and right content */
 }
 
 .cntct .social {
