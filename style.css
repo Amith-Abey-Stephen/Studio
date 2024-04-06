@@ -51,7 +51,7 @@ li a{
         background-repeat: no-repeat;
 }
 p{
-    color: #FFF;
+    color: #979797;
     text-align: center;
     margin-left: 8em;
     margin-right: 8em;
@@ -64,11 +64,10 @@ p{
 }
 
 h3{
-    margin-top: 1em;
     font-size: 65px;
     color: white;
     text-align: center;
-    font-family: "Poppins",sans-serif;
+    font-family: "Inria Serif";
 }
 
 
