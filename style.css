@@ -282,3 +282,51 @@ i{
 .cntct form input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+/* 
+li a:focus,
+li a:active{
+color: #0056b3;
+border: #0056b3 solid 2px;
+} */
+
+@media only screen and (max-width: 767px) {
+   /* HOME SECTION */
+    .bgimg{
+        background-size:900px;
+        background-position: center top -140px;
+        }
+    h3{
+        font-size: 45px;
+    }
+    p{
+        margin-left: 3em;
+        margin-right: 3em;  
+        margin-top: 10em;     
+    }
+    
+
+        
+    /* ABOUT SECTION */
+
+    .about_t {
+        font-size: 50px;
+
+    }
+    .about_content {
+        display: flex;
+        
+    }
+    .left img {
+        height: 20rem;
+        margin: 4rem;
+    }
+    .about_content .right p{
+        max-width: 200px;
+        margin-right: 0em;
+        font-size: 18px;
+        margin: 0;
+        /* width: 20rem; */
+    }
+
+  }
