@@ -182,34 +182,42 @@ p{
     padding-bottom: 5em;
 }
 
+
+
+
+
 /* GALLERY SECTION */
-.gallery h2{
-    margin-top: 2em;
-    margin-bottom: 2em;
-    color: antiquewhite;
+.g_container {
     text-align: center;
-    font-size: 50px;
 }
-
-.gallery-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.title {
+    margin-top: 50px;
 }
-
+.gallery {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-gap: 10px;
+}
 .gallery-item {
-    width: calc(50% - 5px); /* Each item takes up half of the container's width with some space in between */
-    margin-bottom: 10px; /* Adjust spacing between rows */
-    box-sizing: border-box; /* Ensure padding and borders are included in the width */
-    text-align: center; /* Center the content horizontally */
+   overflow: hidden;
+   border-radius: 5px;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+   height: 300px; /* Set a fixed height for all gallery items */
 }
-
 .gallery-item img {
-    /* max-width: 100%; Adjust image width */
-    height: 50%; /* Maintain aspect ratio */
-    display: block;
-    width: auto; /* Ensure images don't have default inline layout */
+   width: auto;
+   height: 100%; /* Set the height to 100% of the parent container's height */
+   display: block;
+   margin: 0 auto; /* Center the image horizontally */
+   transition: transform 0.3s ease;
 }
+.gallery-item:hover img {
+   transform: scale(1.1);
+}
+  
+
+
+
 
 /* CONTACT SECTION */
 #contact {
