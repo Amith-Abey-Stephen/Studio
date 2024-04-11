@@ -8,8 +8,14 @@
 </head>
 
 <body>
-    <!-- <section class="nav"> -->
-        <div class="navbar">
+    <section class="nav">
+<!-- Navbar toggle button -->
+<div class="navbar-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+        <div  class="navbar">
             <img src="/Assests/Black and White Photography Camera Photo Studio Logo (1) 4.png" alt="Logo image" class="logo">
             <ul>
                 <li><a href="#home">HOME</a></li>
@@ -19,7 +25,17 @@
                 <li><a href="#contact">CONTACT US</a></li>
             </ul>
         </div>
-        <audio src="audio/Main-Street-chosic.com_.mp3" autoplay loop></audio>
+
+        <div  class="mobile-menu">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#service">SERVICE</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!-- <audio src="audio/Main-Street-chosic.com_.mp3" autoplay loop></audio>  -->
     <!-- HOME SECTION -->
         <section id="home">
             <div class="bgimg">
@@ -205,8 +221,14 @@
         </div>
         
     </section>
-  <script>
 
-  </script>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.mobile-menu');
+            menu.classList.toggle('open');
+        }
+    </script>
+    
 </body>
 </html>
