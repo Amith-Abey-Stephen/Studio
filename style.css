@@ -306,7 +306,7 @@ li a{
     color: var(--text-color);
 }
 .cntct {
-    dispay: flex;
+    dispay: flex; 
     /* justify-content: center;
     align-items: flex-start; Align items at the start of the cross axis */
     max-width: 1200px;
