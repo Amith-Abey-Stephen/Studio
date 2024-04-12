@@ -193,25 +193,22 @@ li a{
 
 
 /* SERVICE SECTION */
+/* SERVICE SECTION */
 .service {
     border-bottom: 2px solid var(--primary-color);
 }
 
 .service-container {
-    
-        justify-content: center;
-        align-items: center;
-        border-bottom: 2px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .service-head {
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 2rem;
-        color: var(--primary-color);
-        margin-top: 400px;
-
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-top: 400px;
 }
 
 .service-head span {
@@ -219,33 +216,33 @@ li a{
 }
 
 .card-area {
-    margin-left: 10em;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
-    margin-bottom: 7em;
-    margin-top: -40em;
+    margin: 0 auto; /* Center the grid */
+    margin-top: 20px; /* Adjust margin as needed */
+    margin-right: 40px; /* Adjust margin as needed */
 }
 
 .card {
-    height: 100%;
-    width: 70%;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     border: 1px solid var(--text-color);
     border-radius: 10px;
+    padding: 5px;
 }
 
 .card img {
-    max-width: 100%;
-    height: auto;
+    max-width: 80%;
+    height: 200px;
     border-radius: 10px 10px 0 0; /* Adjust border-radius */
 }
 
 .container {
-    margin-top: 15px;
+    margin-top: 15px;  
 }
 
 .container h4 {
@@ -258,7 +255,6 @@ li a{
     color: var(--text-color);
     margin-top: 1em;
     font-size: 12px;
-    padding-bottom: 5em;
 }
 
 
@@ -310,7 +306,7 @@ li a{
     color: var(--text-color);
 }
 .cntct {
-    display: flex;
+    dispay: flex;
     /* justify-content: center;
     align-items: flex-start; Align items at the start of the cross axis */
     max-width: 1200px;
@@ -445,26 +441,22 @@ li a{
 
 
 
-/* SERVICE SECTION */
+/* SERVICE SECTION *//* SERVICE SECTION */
 .service {
     border-bottom: 2px solid var(--primary-color);
 }
 
 .service-container {
-    
-        justify-content: center;
-        align-items: center;
-        border-bottom: 2px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .service-head {
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 2rem;
-        color: var(--primary-color);
-        margin-top: 400px;
-
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-top: 400px;
 }
 
 .service-head span {
@@ -472,23 +464,22 @@ li a{
 }
 
 .card-area {
-    margin-left: 10em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
-    margin-bottom: 7em;
-    margin-top: -40em;
+    margin: 0 auto; /* Center the grid */
+    margin-top: 20px; /* Adjust margin as needed */
 }
 
 .card {
-    height: 100%;
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     border: 1px solid var(--text-color);
     border-radius: 10px;
+    padding: 20px;
 }
 
 .card img {
@@ -511,7 +502,5 @@ li a{
     color: var(--text-color);
     margin-top: 1em;
     font-size: 12px;
-    padding-bottom: 5em;
 }
-
 }
