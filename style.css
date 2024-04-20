@@ -217,7 +217,6 @@ li a{
     margin: 0 auto; /* Center the grid */
     margin-right: 40px; /* Adjust margin as needed */
     margin-left: 10px; /* Adjust margin as needed */
-
 }
 
 .card {
@@ -229,6 +228,7 @@ li a{
     border: 1px solid var(--text-color);
     border-radius: 10px;
     padding: 5px;
+
 }
 
 .card img {
@@ -240,6 +240,7 @@ li a{
 .container {
     margin-top: 15px;  
     height: 8em;
+    
 }
 
 .container h4 {
@@ -302,22 +303,33 @@ li a{
 }
 #contact h2{
     color: var(--text-color);
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline goldenrod 2px;
+    margin-bottom: 50px;
 }
 .cntct {
     display: flex;
-    /* justify-content: center;
-    align-items: flex-start; Align items at the start of the cross axis */
     max-width: 1200px;
     margin: auto;
 }
-
+.cntct .social{
+    margin-left: 100px;
+}
+.cntct .social p{
+    color: #fff;
+    text-align: left;
+    width:400px;
+    margin-left: 12px;
+}
 .cntct .social a {
     display: flex;
-    /* margin-right: 10px; */
+    margin-right: 10px;
     color: var(--text-color);
     font-size: 20px;
     padding: 10px;
     text-decoration: none;
+    width: 200px;
 }
 i{
     color: var(--primary-color);
@@ -325,8 +337,25 @@ i{
 }
 .cntct form {
     margin-top: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
-
+.cntct form .headinps{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.cntct form .headinps .inps{/**/
+    flex: 0;
+}
+.cntct form .headinps .inps .cservice{ /*Service drop down option*/
+    color: #6b6767; 
+    background-color: #414344; 
+    border-radius: 4px; 
+    height: 35px; 
+    width: 190px;
+    border-style: hidden;
+}
 .cntct form label {
     display: block;
     margin-bottom: 5px;
@@ -341,26 +370,24 @@ i{
 }
 
 .cntct form input[type="submit"] {
-    background-color: #007bff;
-    color: var(--text-color);
-    border: none;
+    background-color: goldenrod;
+    color: black;
+    box-shadow: 2px 4px 5px rgba(255, 215, 40, 0.3);
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 16px;
     cursor: pointer;
 }
 
-.cntct form input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
 .cright{
-    /* margin-left: 400px; */
+    text-align: center;
+    margin-left: 100px;
 }
-
 textarea{
     background-color: #414344;
     border-style: hidden;
     border-radius: 5px;
+    height: 200px; width: 390px;
+    margin-bottom: 20px;
 }
 
 input{
@@ -380,7 +407,8 @@ border: #0056b3 solid 2px;
 
 @media screen and (max-width: 768px) {
     .navbar-toggle {
-        display: block;
+        display: none;
+        /* display: block; */
     }
 
     .navbar {
@@ -519,6 +547,125 @@ li a{
     margin-top: 1em;
     font-size: 12px;
 }
+
+
+
+
+
+
+
+
+/* CONTACT SECTION */
+#contact {
+    background-color: var(--bg-color);
+}
+#contact h2{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline goldenrod 2px;
+    margin-bottom: 50px;
+}
+.cntct {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0;
+}
+.cntct .social{
+    margin-left: 10px;
+}
+.cntct .social p{
+    color: #fff;
+    text-align: center;
+    width:90%;
+    margin-left: 10px;
+}
+.cntct .social a {
+    display: flex;
+    margin-right: 10px;
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    width: 300px;
+}
+i{
+    color: var(--primary-color);
+    margin-right: 20px;
+}
+
+.cright{
+    text-align: center;
+    width: 200px;
+    margin-left: 30px;
+}
+.cntct form {
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 0 ;
+    /* overflow: hidden; */
+    margin-top: 40px;
+}
+.cntct form .headinps{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+.cntct form .inps{/**/
+    flex: 0;
+}
+.cntct form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: var(--text-color);
+    font-size: 20px;
+}
+.inps label{
+    text-align: left;
+}
+.cntct form input[type="text"] {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #414344;
+}
+textarea{
+    background-color: #414344;
+    border-style: hidden;
+    border-radius: 5px;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+input{
+    border-style: hidden;
+}
+
+option{
+    color: whitesmoke;
+}
+.cntct form .cservice{ /*Service drop down option*/
+    color: #6b6767; 
+    background-color: #414344; 
+    border-radius: 4px; 
+    height: 5px; 
+    width: 400px;
+    border-style: hidden;
+}
+.cntct form input[type="submit"] {
+    background-color: goldenrod;
+    color: black;
+    box-shadow: 2px 4px 5px rgba(255, 215, 40, 0.3);
+    padding: 10px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+
+
 
 
 }
