@@ -589,6 +589,7 @@ li a{
     padding: 10px;
     text-decoration: none;
     width: 300px;
+    order: -1;
 }
 i{
     color: var(--primary-color);
@@ -651,8 +652,8 @@ option{
     color: #6b6767; 
     background-color: #414344; 
     border-radius: 4px; 
-    height: 5px; 
-    width: 400px;
+    /* height: 25px; 
+    width: 800px; */
     border-style: hidden;
 }
 .cntct form input[type="submit"] {
@@ -663,7 +664,9 @@ option{
     border-radius: 16px;
     cursor: pointer;
 }
-
+select{
+    padding: 22px 10px; 
+}
 
 
 
