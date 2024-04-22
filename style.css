@@ -493,19 +493,20 @@ li a{
 /* SERVICE SECTION */
 .service {
     border-bottom: 2px solid var(--primary-color);
+    overflow: hidden;
 }
 
 .service-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid var(--primary-color);
+    height: 2000px;
 }
 
 .service-head {
     font-size: 2rem;
     color: var(--primary-color);
-    margin-top: 400px;
+    margin-top: 0px;
 }
 
 .service-head span {
@@ -514,15 +515,19 @@ li a{
 
 .card-area {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 40px;
-    margin: 0 auto; /* Center the grid */
-    margin-top: 20px; /* Adjust margin as needed */
-    margin-right: 40px; /* Adjust margin as needed */
+    margin: 0  auto; /* Center the grid */
+    margin-top: 0px; /* Adjust margin as needed */
+    margin-right: 0px; /* Adjust margin as needed */
+    /* margin: 0 auto;
+    margin-top: 20px; 
+    margin-right: 40px;  */
+
 }
 
 .card {
-    width: auto;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -533,15 +538,13 @@ li a{
 }
 
 .card img {
-    max-width: 80%;
-    height: 200px;
+    aspect-ratio: 4/2;
     border-radius: 10px 10px 0 0; /* Adjust border-radius */
 }
 
 .container {
     margin-top: 15px;  
 }
-
 .container h4 {
     color: var(--text-color);
     margin-top: 1em;
@@ -552,6 +555,39 @@ li a{
 
 
 
+/* GALLERY SECTION */
+.g_container {
+    text-align: center;
+}
+.title {
+    margin-top: 50px;
+}
+.gallery {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-gap: 10px;
+}
+.gallery-item {
+   overflow: hidden;
+   border-radius: 5px;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+   height: 250px; /* Set a fixed height for all gallery items */
+   
+}
+.gallery-item img {
+    aspect-ratio: 4/4;
+   width: auto;
+   height: 100%; /* Set the height to 100% of the parent container's height */
+   display: block;
+   margin: 0 auto; /* Center the image horizontally */
+   transition: transform 0.3s ease;
+   
+}
+.gallery-item:hover img {
+   transform: scale(1.1);
+   overflow: hidden;
+   
+}
 
 
 
@@ -589,7 +625,7 @@ li a{
     padding: 10px;
     text-decoration: none;
     width: 300px;
-    order: -1;
+    /* order: -1; */
 }
 i{
     color: var(--primary-color);
