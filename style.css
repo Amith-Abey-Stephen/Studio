@@ -507,10 +507,13 @@ li a{
     font-size: 2rem;
     color: var(--primary-color);
     margin-top: 0px;
+    flex-direction: row;
 }
 
 .service-head span {
     margin: 5px;
+    margin-top: -900px;
+
 }
 
 .card-area {
