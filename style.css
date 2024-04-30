@@ -187,38 +187,34 @@ li a{
 .service {
     border-bottom: 2px solid var(--primary-color);
     border-top: 2px solid var(--primary-color);
-    
 }
-
 .service-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500px; 
 }
-
 .service-head {
     font-size: 2rem;
     color: var(--primary-color);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* Align text to the left */
-    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-
-.service-head span {
+.service-head .span {
     margin: 5px;
 }
-
+#ser{
+    display: none;
+}
 .card-area {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
-    margin: 0 auto; /* Center the grid */
-    margin-right: 40px; /* Adjust margin as needed */
-    margin-left: 10px; /* Adjust margin as needed */
+    margin: 0 auto; 
+    margin-right: 40px;
+    margin-left: 10px; 
 }
-
 .card {
     width: auto;
     display: flex;
@@ -228,27 +224,22 @@ li a{
     border: 1px solid var(--text-color);
     border-radius: 10px;
     padding: 5px;
-
 }
-
 .card img {
     max-width: 80%;
     height: 200px;
     border-radius: 10px 10px 0 0; /* Adjust border-radius */
 }
-
 .container {
     margin-top: 15px;  
     height: 8em;
     
 }
-
 .container h4 {
     color: var(--text-color);
     margin-top: 1em;
     font-size: 24px;
 }
-
 .container p {
     color: var(--text-color);
     margin-top: 1em;
@@ -276,7 +267,6 @@ li a{
    border-radius: 5px;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
    height: 300px; /* Set a fixed height for all gallery items */
-   
 }
 .gallery-item img {
    width: auto;
@@ -361,14 +351,12 @@ i{
     margin-bottom: 5px;
     color: var(--text-color);
 }
-
 .cntct form input[type="text"] {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     background-color: #414344;
 }
-
 .cntct form input[type="submit"] {
     background-color: goldenrod;
     color: black;
@@ -377,7 +365,6 @@ i{
     border-radius: 16px;
     cursor: pointer;
 }
-
 .cright{
     text-align: center;
     margin-left: 100px;
@@ -389,11 +376,9 @@ textarea{
     height: 200px; width: 390px;
     margin-bottom: 20px;
 }
-
 input{
     border-style: hidden;
 }
-
 option{
     color: whitesmoke;
 }
@@ -493,6 +478,7 @@ li a{
 /* SERVICE SECTION */
 .service {
     border-bottom: 2px solid var(--primary-color);
+    border-top: 2px solid var(--primary-color);
     overflow: hidden;
 }
 
@@ -511,21 +497,24 @@ li a{
 }
 
 .service-head span {
-    margin: 5px;
-    margin-top: -900px;
-
+    display: none;
+}
+#ser{
+    display: block;
+    color: var(--primary-color);
+    margin-top: -1800px;
+    margin-left: 60px;
+    font-size: 50px;
 }
 
 .card-area {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 40px;
-    margin: 0  auto; /* Center the grid */
-    margin-top: 0px; /* Adjust margin as needed */
-    margin-right: 0px; /* Adjust margin as needed */
-    /* margin: 0 auto;
-    margin-top: 20px; 
-    margin-right: 40px;  */
+    margin: 0  auto; 
+    margin-top: 0px; 
+    margin-right: 0px;
+    margin-left: -300px; 
 
 }
 
@@ -683,7 +672,6 @@ textarea{
 input{
     border-style: hidden;
 }
-
 option{
     color: whitesmoke;
 }
@@ -699,9 +687,11 @@ option{
     background-color: goldenrod;
     color: black;
     box-shadow: 2px 4px 5px rgba(255, 215, 40, 0.3);
-    padding: 10px 20px;
+    padding: 20px 50px;
     border-radius: 16px;
     cursor: pointer;
+    font-size: 18px;
+    margin-left: 60px;
 }
 select{
     padding: 22px 10px; 
